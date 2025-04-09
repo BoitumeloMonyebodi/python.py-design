@@ -1,0 +1,35 @@
+# Base class: Animal
+class Animal:
+    def move(self):
+    pass # This is a placeholder for the move method
+
+# Subclass: Dog
+class Dog(Animal):
+    def move(self):
+        print("The dog runs on four legs.")
+
+        # Subclass: Bird
+class Bird(Animal):
+    def move(self):
+        print("The bird flies in the sky.")
+
+        # Subclass: Fish
+class Fish(Animal):
+    def move(self):
+        print("The fish swims in the water.")
+
+        # Subclass: Snake
+class Snake(Animal):
+    def move(self):
+        print("The snake slithers on the ground.")
+
+        # Creating objects for each animal
+dog = Dog()
+bird = Bird()
+fish = Fish()
+snake = Snake()
+
+# Demonstrating polymorphism
+animals=[dog,bird,fish,snake]
+for animal in animals:
+    animal.move()  # Each animal moves differently
